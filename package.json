@@ -1,0 +1,22 @@
+{
+  "name": "truetrip-ai",
+  "version": "1.0.0",
+  "description": "Full-stack MERN travel search and booking application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build",
+    "seed": "cd server && npm run seed"
+  },
+  "keywords": ["travel", "booking", "mern", "ai", "react", "nodejs"],
+  "author": "TrueTrip AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
