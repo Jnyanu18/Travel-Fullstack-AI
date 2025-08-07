@@ -26,12 +26,13 @@ const destinationSchema = new mongoose.Schema({
     caption: String
   }],
   coordinates: {
-    latitude: {
-      type: Number,
-      required: true
+    type: {
+      type: String,
+      enum: ['Point'],
+      default: 'Point'
     },
-    longitude: {
-      type: Number,
+    coordinates: {
+      type: [Number],
       required: true
     }
   },
@@ -84,7 +85,7 @@ const destinationSchema = new mongoose.Schema({
   }
 });
 
-// Index for geospatial queries
+// Index for geospatial queries - using GeoJSON format
 destinationSchema.index({ coordinates: '2dsphere' });
 
 // Text index for search

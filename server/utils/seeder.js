@@ -60,8 +60,8 @@ const destinations = [
       }
     ],
     coordinates: {
-      latitude: 36.3932,
-      longitude: 25.4615
+      type: 'Point',
+      coordinates: [25.4615, 36.3932] // [longitude, latitude]
     },
     category: 'island',
     popularActivities: ['Wine tasting', 'Sunset watching', 'Boat tours', 'Beach relaxation'],
@@ -93,8 +93,8 @@ const destinations = [
       }
     ],
     coordinates: {
-      latitude: -13.1631,
-      longitude: -72.5450
+      type: 'Point',
+      coordinates: [-72.5450, -13.1631] // [longitude, latitude]
     },
     category: 'historical',
     popularActivities: ['Hiking', 'Photography', 'Cultural tours', 'Train rides'],
@@ -126,8 +126,8 @@ const destinations = [
       }
     ],
     coordinates: {
-      latitude: 35.6762,
-      longitude: 139.6503
+      type: 'Point',
+      coordinates: [139.6503, 35.6762] // [longitude, latitude]
     },
     category: 'city',
     popularActivities: ['Temple visits', 'Food tours', 'Shopping', 'Nightlife'],
@@ -159,8 +159,8 @@ const destinations = [
       }
     ],
     coordinates: {
-      latitude: 31.0801,
-      longitude: -4.0133
+      type: 'Point',
+      coordinates: [-4.0133, 31.0801] // [longitude, latitude]
     },
     category: 'desert',
     popularActivities: ['Camel trekking', 'Stargazing', 'Desert camping', 'Photography'],
@@ -192,8 +192,8 @@ const destinations = [
       }
     ],
     coordinates: {
-      latitude: -8.3405,
-      longitude: 115.0920
+      type: 'Point',
+      coordinates: [115.0920, -8.3405] // [longitude, latitude]
     },
     category: 'beach',
     popularActivities: ['Beach relaxation', 'Temple visits', 'Spa treatments', 'Surfing'],
