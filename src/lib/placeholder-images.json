@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A beautiful travel landscape with mountains and a lake.",
+      "imageUrl": "https://images.unsplash.com/photo-1526392060635-9d6019884377?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmF2ZWwlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzYyNTg2MjIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel landscape"
+    },
+    {
+      "id": "explore-paris",
+      "description": "The Eiffel Tower in Paris.",
+      "imageUrl": "https://images.unsplash.com/photo-1661702306109-e8cf3ad95824?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXJpcyUyMGxhbmRtYXJrfGVufDB8fHx8MTc2MjY1OTQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paris landmark"
+    },
+    {
+      "id": "explore-tokyo",
+      "description": "A street in Tokyo at night.",
+      "imageUrl": "https://images.unsplash.com/photo-1723041472683-dd4b9cf30d26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0b2t5byUyMHN0cmVldHxlbnwwfHx8fDE3NjI2MDI1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tokyo street"
+    },
+    {
+      "id": "explore-rome",
+      "description": "The Colosseum in Rome.",
+      "imageUrl": "https://images.unsplash.com/photo-1704215000884-c1f36ba716c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb21lJTIwbGFuZG1hcmt8ZW58MHx8fHwxNzYyNjcyNTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rome landmark"
+    },
+    {
+      "id": "attraction-placeholder",
+      "description": "A generic placeholder for a travel attraction.",
+      "imageUrl": "https://images.unsplash.com/photo-1714675166122-9fb882fe1f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmF2ZWwlMjBhdHRyYWN0aW9ufGVufDB8fHx8MTc2MjY3MjU4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel attraction"
+    }
+  ]
 }
