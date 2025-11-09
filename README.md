@@ -1,57 +1,58 @@
-# AI Travel Genie – README
+# TravelWise - Your AI Travel Genie
 
 ## 📌 Overview
 
-AI Travel Genie is a personalized travel-planning application built with Next.js, Firebase, and Genkit. It uses AI to generate custom travel itineraries based on user preferences.
+TravelWise is a Next.js application that uses AI to generate personalized travel itineraries. Users can input their destination, travel dates, and preferences to receive a custom travel plan. The app also allows users to explore destinations to discover popular attractions, restaurants, and hotels.
 
-* **AI itinerary generation**
-* **Location exploration**
-* **Personalized recommendations**
+This project is built with:
 
-The project integrates **Next.js**, **Firebase**, and **Genkit** with Google's Gemini models.
+*   **Frontend:** Next.js, React, TypeScript
+*   **Styling:** Tailwind CSS, shadcn/ui
+*   **AI:** Google Gemini via Genkit
+*   **Deployment:** Firebase App Hosting
 
 ---
 
 ## 🚀 Features
 
-### ✈️ Travel Planning
-
-* Generate detailed, day-by-day travel itineraries.
-* Explore destinations to learn about popular attractions, restaurants, and hotels.
-* Get personalized recommendations for activities and dining based on your interests.
-
-### 🤖 AI Capabilities
-
-* **Itinerary Generation**: Creates personalized trip plans using AI.
-* **Location Exploration**: Provides curated information about any destination.
-* **Personalized Recommendations**: Suggests activities, restaurants, and accommodations based on user preferences.
+*   **Personalized Itinerary Generation:** AI-powered itinerary creation based on user preferences.
+*   **Destination Exploration:** Discover points of interest, restaurants, and hotels for any location.
+*   **Personalized Recommendations:** Get tailored suggestions for activities, dining, and lodging.
+*   **Modern UI:** A clean and responsive interface built with modern web technologies.
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:** Next.js, React, Tailwind CSS, shadcn/ui
-**AI:** Genkit, Google Gemini
-**Platform:** Firebase App Hosting
+*   **Framework:** [Next.js](https://nextjs.org/)
+*   **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **AI Integration:** [Genkit](https://firebase.google.com/docs/genkit)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/)
 
 ---
 
 ## 🔧 Project Structure
 
-The project uses a standard Next.js App Router structure.
+The project uses the Next.js App Router structure.
 
 ```
 root/
  ├── src/
- │   ├── app/                # Next.js pages and layouts
- │   ├── components/         # React components
- │   ├── contexts/           # React context providers
- │   ├── ai/                 # Genkit flows and configuration
- │   ├── lib/                # Utility functions and libraries
- ├── public/               # Static assets
- ├── next.config.ts        # Next.js configuration
- ├── tailwind.config.ts    # Tailwind CSS configuration
- └── README.md
+ │   ├── app/               # Main application pages and routes
+ │   │   ├── explore/
+ │   │   ├── itinerary/
+ │   │   ├── layout.tsx
+ │   │   └── page.tsx
+ │   ├── ai/                # Genkit AI flows and configuration
+ │   │   └── flows/
+ │   ├── components/        # Reusable React components (UI, layout, etc.)
+ │   ├── contexts/          # React context providers
+ │   ├── lib/               # Utility functions and shared libraries
+ ├── public/                # Static assets
+ ├── next.config.ts
+ ├── tailwind.config.ts
+ └── package.json
 ```
 
 ---
@@ -60,68 +61,34 @@ root/
 
 ### 1. Prerequisites
 
-* Node.js and npm
-* Firebase CLI (for future backend features)
+*   Node.js and npm installed.
+*   A Firebase project with the Gemini API enabled.
+*   An `.env` file with your `GEMINI_API_KEY`.
 
-### 2. Install Dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Set Up Environment Variables
+### 3. Run the development server
 
-Create a `.env` file in the root of the project and add your Google AI API key:
-
-```
-GEMINI_API_KEY=YOUR_API_KEY
-```
-
-### 4. Run the Development Server
-
-The application runs on port 9002.
+This command starts the Next.js app and the Genkit development server simultaneously.
 
 ```bash
 npm run dev
 ```
 
-### 5. Run the Genkit Developer UI
-
-To inspect and test your AI flows, run the Genkit developer UI in a separate terminal:
-
-```bash
-npm run genkit:watch
-```
-
-This will start the Genkit UI, typically on port 4000.
+The application will be available at `http://localhost:9002`.
 
 ---
 
-## 📦 Build & Deploy
+## 📦 Deployment
 
-### Build for Production
-
-```bash
-npm run build
-```
-
-### Deploy to Firebase App Hosting
-
-This project is configured for deployment to Firebase App Hosting. Ensure you have the Firebase CLI installed and configured.
-
-```bash
-firebase deploy --only hosting
-```
+This application is configured for deployment on **Firebase App Hosting**. Pushing your code to a linked GitHub repository will trigger an automatic build and deploy process.
 
 ---
 
-## 🔮 Roadmap
+## 💬 Support
 
-* User authentication with Firebase Auth
-* Saving and managing itineraries in Firestore
-* Chat-based travel assistant
-* Real-time price prediction
-
----
-
-**Made with ❤️ using Next.js, Firebase + AI**
+For issues or feature requests, please open a GitHub issue in the repository.
